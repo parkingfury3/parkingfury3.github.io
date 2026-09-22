@@ -1,0 +1,136 @@
+/* Category Pages Stylesheet - Parking Fury 3 Unblocked */
+
+.category-hero {
+    max-width: 1200px;
+    margin: 20px auto 10px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.category-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #ff007f, #7928ca);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-badge.badge-car {
+    background: linear-gradient(135deg, #e83e8c, #8257e6);
+}
+
+.category-badge.badge-action {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.category-badge.badge-puzzle {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.category-hero h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.category-hero p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 950px;
+}
+
+.banner-item.active {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.35);
+}
+
+.count-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .category-hero {
+        padding: 20px;
+    }
+
+    .category-hero h1 {
+        font-size: 24px;
+    }
+}
+
+/* Dynamic Masonry-like Grid & Attractive Featured Games */
+.games-grid {
+    grid-auto-flow: dense;
+}
+
+.game-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 10px;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.featured-game {
+    grid-column: span 2;
+    grid-row: span 2;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+}
+
+.featured-game:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-game::before {
+    content: "🔥 HOT";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+.featured-game .game-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.4) 70%, transparent);
+}
+
